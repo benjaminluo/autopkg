@@ -3,13 +3,13 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Uses parent pkg recipe to downloads latest Adium and import it into the JSS.</string>
+    <string>Uses parent pkg recipe to downloads latest MSOffice2011Updates and import it into the JSS.</string>
     <key>Identifier</key>
-    <string>com.github.autopkg.jss.Adium</string>
+    <string>com.github.autopkg.jss.MSOffice2011Updates</string>
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>Adium</string>
+      <string>MSOffice2011Updates</string>
       <key>JSS_REPO</key>
       <string>/Volumes/JSS_Dist_Point/Packages</string>
       <key>JSS_URL</key>
@@ -29,7 +29,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.autopkg.pkg.Adium</string>
+    <string>com.github.autopkg.pkg.Office2011Updates</string>
     <key>Process</key>
     <array>
       <dict>
