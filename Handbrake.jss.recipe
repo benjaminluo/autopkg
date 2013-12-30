@@ -8,22 +8,12 @@
     <string>com.github.autopkg.jss.Handbrake</string>
     <key>Input</key>
     <dict>
-      <key>NAME</key>
-      <string>Handbrake</string>
-      <key>JSS_REPO</key>
-      <string>/Volumes/JSS_Dist_Point/Packages</string>
-      <key>JSS_URL</key>
-      <string>https://test.jss.private:8443</string>
-      <key>API_USERNAME</key>
-      <string>apiuser</string>
-      <key>API_PASSWORD</key>
-      <string>apipass</string>
       <key>CATEGORY</key>
       <string>%NAME%</string>
-      <key>SELFSERVE_POLICY</key>
-      <string>SelfServeLatest_%NAME%</string>
       <key>SMART_GROUP</key>
       <string>LessThanMostRecent_%NAME%</string>
+      <key>SELFSERVE_POLICY</key>
+      <string>SelfServeLatest_%NAME%</string>
       <!--<key>ARB_GROUP_NAME</key><string>arbitrary</string>-->
     </dict>
     <key>MinimumVersion</key>
@@ -37,20 +27,12 @@
         <dict>
           <key>prod_name</key>
           <string>%NAME%</string>
-          <key>repo_path</key>
-          <string>%JSS_REPO%</string>
-          <key>jss_url</key>
-          <string>%JSS_URL%</string>
-          <key>api_username</key>
-          <string>%API_USERNAME%</string>
-          <key>api_password</key>
-          <string>%API_PASSWORD%</string>
           <key>category</key>
           <string>%NAME%</string>
-          <key>selfserve_policy</key>
-          <string>%SELFSERVE_POLICY%</string>
           <key>smart_group</key>
           <string>%SMART_GROUP%</string>
+          <key>selfserve_policy</key>
+          <string>%SELFSERVE_POLICY%</string>
           <!--<key>arb_group_name</key><string>%ARB_GROUP_NAME%</string>-->
         </dict>
         <key>Processor</key>
