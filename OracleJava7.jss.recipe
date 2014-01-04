@@ -19,58 +19,12 @@
         <key>MinimumVersion</key>
         <string>0.2.0</string>
         <key>ParentRecipe</key>
-        <string>com.github.autopkg.download.OracleJava7</string>
+        <string>com.github.autopkg.pkg.OracleJava7Versioned</string>
         <key>Process</key>
         <array>
             <dict>
                 <key>Arguments</key>
                 <dict>
-                    <key>flat_pkg_path</key>
-                    <string>%pathname%/*.pkg</string>
-                    <key>destination_path</key>
-                    <string>%RECIPE_CACHE_DIR%/unpack</string>
-                </dict>
-                <key>Processor</key>
-                <string>FlatPkgUnpacker</string>
-            </dict>
-            <dict>
-                <key>Arguments</key>
-                <dict>
-                    <key>pkgroot</key>
-                    <string>%RECIPE_CACHE_DIR%/unpack/root/Library/Internet Plug-Ins/JavaAppletPlugin.plugin</string>
-                    <key>pkgdirs</key>
-                    <dict/>
-                </dict>
-                <key>Processor</key>
-                <string>PkgRootCreator</string>
-            </dict>
-            <dict>
-                <key>Arguments</key>
-                <dict>
-                    <key>pkg_payload_path</key>
-                    <string>%RECIPE_CACHE_DIR%/unpack/javaappletplugin.pkg/Payload</string>
-                    <key>destination_path</key>
-                    <string>%RECIPE_CACHE_DIR%/unpack/root/Library/Internet Plug-Ins/JavaAppletPlugin.plugin</string>
-                </dict>
-                <key>Processor</key>
-                <string>PkgPayloadUnpacker</string>
-            </dict>
-            <dict>
-                <key>Arguments</key>
-                <dict>
-                    <key>input_plist_path</key>
-                    <string>%RECIPE_CACHE_DIR%/unpack/root/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Enabled.plist</string>
-                    <key>plist_version_key</key>
-                    <string>CFBundleVersion</string>
-                </dict>
-                <key>Processor</key>
-                <string>Versioner</string>
-            </dict>
-            <dict>
-                <key>Arguments</key>
-                <dict>
-                    <key>pkg_path</key>
-                    <string>%pathname%</string>
                     <key>prod_name</key>
                     <string>%NAME%</string>
                     <key>category</key>
