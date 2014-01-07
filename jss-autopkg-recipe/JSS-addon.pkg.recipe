@@ -14,7 +14,7 @@
         <string>https://github.com/arubdesu/jss-autopkg-addon/zipball/master</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.1</string>
+    <string>0.2.5</string>
     <key>Process</key>
     <array>
         <dict>
