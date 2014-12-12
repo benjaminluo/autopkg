@@ -8,12 +8,22 @@
     <string>com.github.autopkg.jss.Adium</string>
     <key>Input</key>
     <dict>
+      <key>NAME</key>
+      <string>Adium</string>
       <key>CATEGORY</key>
-      <string>%NAME%</string>
-      <key>SMART_GROUP</key>
-      <string>LessThanMostRecent_%NAME%</string>
-      <key>SELFSERVE_POLICY</key>
-      <string>SelfServeLatest_%NAME%</string>
+      <string>Productivity</string>
+      <key>POLICY_CATEGORY</key>
+      <string>Testing</string>
+      <key>POLICY_TEMPLATE</key>
+      <string>%RECIPE_DIR%/PolicyTemplate.xml</string>
+      <key>ICON</key>
+      <string>%RECIPE_DIR%/Adium.png</string>
+      <key>GROUP_TEMPLATE</key>
+      <string>%RECIPE_DIR%/SmartGroupTemplate.xml</string>
+      <key>GROUP_NAME</key>
+      <string>%NAME%-update-smart</string>
+      <key>DESCRIPTION</key>
+      <string>Adium is an Instant Messaging application that can be integrated with other IM applications like AIM, Yahoo, and MSN..</string>
       <!--<key>ARB_GROUP_NAME</key><string>arbitrary</string>-->
     </dict>
     <key>MinimumVersion</key>
