@@ -9,45 +9,58 @@
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>Adium</string>
+      <string>Firefox</string>
       <key>CATEGORY</key>
-      <string>Productivity</string>
+      <string>Web Browsers and Internet Utilities</string>
       <key>POLICY_CATEGORY</key>
       <string>Testing</string>
       <key>POLICY_TEMPLATE</key>
       <string>%RECIPE_DIR%/PolicyTemplate.xml</string>
       <key>ICON</key>
-      <string>%RECIPE_DIR%/Adium.png</string>
+      <string>%RECIPE_DIR%/Firefox.png</string>
       <key>GROUP_TEMPLATE</key>
       <string>%RECIPE_DIR%/SmartGroupTemplate.xml</string>
       <key>GROUP_NAME</key>
       <string>%NAME%-update-smart</string>
       <key>DESCRIPTION</key>
-      <string>Adium is an Instant Messaging application that can be integrated with other IM applications like AIM, Yahoo, and MSN..</string>
-      <!--<key>ARB_GROUP_NAME</key><string>arbitrary</string>-->
+      <string>Web Browser.</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.5</string>
     <key>ParentRecipe</key>
     <string>com.github.autopkg.pkg.Adium</string>
     <key>Process</key>
-    <array>
-      <dict>
-        <key>Arguments</key>
-        <dict>
-          <key>prod_name</key>
-          <string>%NAME%</string>
-          <key>category</key>
-          <string>%CATEGORY%</string>
-          <key>smart_group</key>
-          <string>%SMART_GROUP%</string>
-          <key>selfserve_policy</key>
-          <string>%SELFSERVE_POLICY%</string>
-          <!--<key>arb_group_name</key><string>%ARB_GROUP_NAME%</string>-->
-        </dict>
-        <key>Processor</key>
-        <string>JSSImporter</string>
-      </dict>
-    </array>
-  </dict>
+        <array>
+            <dict>
+                <key>Arguments</key>
+                <dict>
+                    <key>prod_name</key>
+                    <string>%NAME%</string>
+                    <key>category</key>
+                    <string>%CATEGORY%</string>
+                    <key>policy_category</key>
+                    <string>%POLICY_CATEGORY%</string>
+                    <key>policy_template</key>
+                    <string>%POLICY_TEMPLATE%</string>
+                    <key>self_service_icon</key>
+                    <string>%ICON%</string>
+                    <key>self_service_description</key>
+                    <string>%DESCRIPTION%</string>
+                    <key>groups</key>
+                    <array>
+                        <dict>
+                            <key>name</key>
+                            <string>%GROUP_NAME%</string>
+                            <key>smart</key>
+                            <true/>
+                            <key>template_path</key>
+                            <string>%GROUP_TEMPLATE%</string>
+                        </dict>
+                    </array>
+                </dict>
+                <key>Processor</key>
+                <string>JSSImporter</string>
+            </dict>
+        </array>
+    </dict>
 </plist>
